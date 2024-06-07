@@ -1,0 +1,112 @@
+<!doctype html>
+<!--=======================================================
+//
+//     FILE : index.html
+//
+//  PROJECT : Responsive Mobile Web App Template
+//
+//    NOTES : For every onclick/onmousedown/onpointerdown, etc.
+//            in HTML code, call StopEvent(event) first.
+//
+//   AUTHOR : Bill Daniels
+//            Copyright 2014-2024, D+S Tech Labs, Inc.
+//            All Rights Reserved
+//
+//======================================================-->
+
+<html lang="en-us">
+
+  <!-- Head -->
+  <head>
+
+    <!-- These three meta tags MUST come first in the <head> tag. -->
+    <!-- All other <head> content must come AFTER these tags.     -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>My App</title>
+
+    <!-- Google Fonts (Icons and Symbols) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="dsStyles.css" />
+    <link rel="stylesheet" href="appStyles.css" />
+
+    <!-- jQuery -->
+    <script src="Scripts/jquery-3.7.1.min.js"></script>
+
+  </head>
+
+  <!-- Body -->
+  <body class="disable-select" onpointerdown="StopEvent(event); HideMenu();">
+
+    <!-- For Full Screen Modal Popups -->
+    <div id="modalBackdrop"></div>
+
+
+    <!--=================================================-->
+    <!--  App Bar                                        -->
+    <!--=================================================-->
+    <div id="appBar" class="themeDark disable-select">
+
+      <div>
+        <img class="appBarIcon" src="Images/DSLogo_Lagoon_320.png" />
+      </div>
+
+      <div id="titleAndVersion">
+        <div id="appTitle">Mobile Web App Template</div>
+        <div id="appVersion">──── Version 2024.01.18 ────</div>
+      </div>
+
+    </div>
+
+
+    <!--=================================================-->
+    <!--  Content Area                                   -->
+    <!--=================================================-->
+    <div id="contentArea" class="themeMedium scroll-container disable-select">
+
+      <!--=================================================
+        Create <div>'s for each of your content pages.
+        - The id's should match the html filename.
+        - They must have the class 'contentPage'.
+      ==================================================-->
+      <div id="splash"     class="contentPage"></div>
+      <div id="home"       class="contentPage"></div>
+      <div id="fonts"      class="contentPage"></div>
+      <div id="icons"      class="contentPage"></div>
+      <div id="cssClasses" class="contentPage"></div>
+
+    </div>
+
+
+    <!--=================================================-->
+    <!--  Bottom Navigation Bar                          -->
+    <!--=================================================-->
+    <div id="navBar" class="themeDark disable-select">
+
+      <!--=================================================
+        Create <button>'s for each of your content pages.
+        - They must have the class 'navButton'.
+        - The onclick attribute must call ShowPage().
+      ==================================================-->
+      <button class="navButton" onpointerdown="StopEvent(event); ShowPage ('home'      , this);"><img src="Images/icon_Home.png" /><br>Home</button>
+      <button class="navButton" onpointerdown="StopEvent(event); ShowPage ('fonts'     , this);"><span style="font-family:ecel"> f </span><br>Fonts</button>
+      <button class="navButton" onpointerdown="StopEvent(event); ShowPage ('icons'     , this);"><span style="font-family:ecel"> i </span><br>Icons</button>
+      <button class="navButton" onpointerdown="StopEvent(event); ShowPage ('cssClasses', this);"><span style="font-family:font_beamweapon">CSS</span><br>CSS Classes</button>
+
+    </div>
+
+
+    <!-- Javascript Extras -->
+    <script src="Scripts/dsExtras.js"></script>
+
+    <!-- Load App Script -->
+    <script src="Scripts/appScript.js"></script>
+
+  </body>
+
+</html>

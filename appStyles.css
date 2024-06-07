@@ -1,0 +1,22 @@
+/*=========================================================
+//
+//     FILE : appStyles.css
+//
+//  PROJECT : Responsive Mobile Web App Template
+//
+//   AUTHOR : Bill Daniels
+//            Copyright 2013-2024, D+S Tech Labs, Inc.
+//            All Rights Reserved
+//
+//=======================================================*/
+
+.pageTitle
+{
+  margin         : 0;
+  font-family    : font_xcel, sans-serif;
+  font-size      : clamp(40px, 5vw, 60px);
+  letter-spacing : clamp(5px, 10px, 15px);
+  line-height    : 1;
+  text-align     : center;
+}
+
