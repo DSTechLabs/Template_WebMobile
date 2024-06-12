@@ -4,9 +4,8 @@
 //
 //  PROJECT : Any web project for local development/testing
 //
-//   AUTHOR : Bill Daniels
-//            Copyright 2023, D+S Tech Labs, Inc.
-//            All Rights Reserved
+//   AUTHOR : Bill Daniels (bill@dstechlabs.com)
+//            See LICENSE.md
 //
 //=============================================================================
 
