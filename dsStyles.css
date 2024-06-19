@@ -2,10 +2,11 @@
 //
 //     FILE : dsStyles.css
 //
-//  PROJECT : Responsive Mobile Web App Template
+//  PROJECT : Common Web App Styles
 //
-//   AUTHOR : Bill Daniels (bill@dstechlabs.com)
-//            See LICENSE.md
+//   AUTHOR : Bill Daniels
+//            Copyright 2009-2024, D+S Tech Labs, Inc.
+//            All Rights Reserved
 //
 //=======================================================*/
 
@@ -52,95 +53,6 @@
   user-select         : none;  /* Standard */
 }
 
-/*--- Colors --------------------------------------------*/
-
-.themeLight
-{
-  color      : var(--themeLightFG);
-  background : var(--themeLightBG);
-}
-
-.themeMedium
-{
-  color      : var(--themeMediumFG);
-  background : var(--themeMediumBG);
-}
-
-.themeDark
-{
-  color      : var(--themeDarkFG);
-  background : var(--themeDarkBG);
-}
-
-.themeBlue
-{
-  color      : var(--themeBlueFG);
-  background : var(--themeBlueBG);
-}
-
-.popupColors
-{
-  color      : var(--popupFG);
-  background : var(--popupBG);
-}
-
-a:link    { text-decoration:none; color:var(--clickable); border:0px; }
-a:hover   { text-decoration:none; color:var(--clickable); border-bottom:1px solid var(--clickable); }
-a:active  { text-decoration:none; color:#FFFF00       ; border-bottom:1px solid #FFFF00; }
-a:visited { text-decoration:none; color:var(--clickable); border:0px; }
-
-/*--- Opacities -----------------------------------------*/
-
-.opacity10 { opacity : 0.1; }
-.opacity20 { opacity : 0.2; }
-.opacity30 { opacity : 0.3; }
-.opacity40 { opacity : 0.4; }
-.opacity50 { opacity : 0.5; }
-.opacity60 { opacity : 0.6; }
-.opacity70 { opacity : 0.7; }
-.opacity80 { opacity : 0.8; }
-.opacity90 { opacity : 0.9; }
-
-/*--- Scrollbars ----------------------------------------*/
-
-.scroll-container                           { overflow   : scroll; }
-.scroll-container::-webkit-scrollbar        { width      : 1vw; height:1vw; }
-.scroll-container::-webkit-scrollbar-track  { background : transparent; cursor:pointer; }
-.scroll-container::-webkit-scrollbar-thumb  { background : var(--scrollThumb); cursor:grab; border-radius:0.5vw; }
-.scroll-container::-webkit-scrollbar-button { display    : none; }
-
-/*--- Fonts ---------------------------------------------*/
-
-@font-face { font-family : font_adventure          ; src : url('Fonts/adventure.ttf'          ); }
-@font-face { font-family : font_airstrike          ; src : url('Fonts/airstrike.ttf'          ); }
-@font-face { font-family : font_anitaSemiSquare    ; src : url('Fonts/anitaSemiSquare.ttf'    ); }
-@font-face { font-family : font_atomicAge          ; src : url('Fonts/atomicAge.ttf'          ); }
-@font-face { font-family : font_audioWide          ; src : url('Fonts/audioWide.ttf'          ); }
-@font-face { font-family : font_beamweaponCondensed; src : url('Fonts/beamweaponCondensed.ttf'); }
-@font-face { font-family : font_beamweapon         ; src : url('Fonts/beamweapon.ttf'         ); }
-@font-face { font-family : font_calligraphy        ; src : url('Fonts/calligraphy.ttf'        ); }
-@font-face { font-family : font_code               ; src : url('Fonts/code.otf'	              ); }
-@font-face { font-family : font_ethnocentric       ; src : url('Fonts/ethnocentric.ttf'       ); }
-@font-face { font-family : font_Imaki              ; src : url('Fonts/Imaki.ttf'              ); }
-@font-face { font-family : font_monospaceTypewriter; src : url('Fonts/monospaceTypewriter.ttf'); }
-@font-face { font-family : font_rexlia             ; src : url('Fonts/rexlia.ttf'             ); }
-@font-face { font-family : font_robot              ; src : url('Fonts/robot.ttf'              ); }
-@font-face { font-family : font_robotoLight        ; src : url('Fonts/robotoLight.ttf'        ); }
-@font-face { font-family : font_robotoRegular      ; src : url('Fonts/robotoRegular.ttf'      ); }
-@font-face { font-family : font_sevenSegment_1     ; src : url('Fonts/sevenSegment_1.otf'     ); }
-@font-face { font-family : font_sevenSegment_2     ; src : url('Fonts/sevenSegment_2.ttf'     ); }
-@font-face { font-family : font_sevenSegment_3     ; src : url('Fonts/sevenSegment_3.ttf'     ); }
-@font-face { font-family : font_sevenSegment_4     ; src : url('Fonts/sevenSegment_4.ttf'     ); }
-@font-face { font-family : font_sonoRegular        ; src : url('Fonts/sonoRegular.ttf'        ); }
-@font-face { font-family : font_spaceAge           ; src : url('Fonts/spaceAge.ttf'           ); }
-@font-face { font-family : font_xcelItalic         ; src : url('Fonts/xcelItalic.ttf'         ); }
-@font-face { font-family : font_xcel               ; src : url('Fonts/xcel.ttf'               ); }
-
-.noWrap
-{
-  white-space : nowrap;
-}
-
 /*--- Brushed Metal Backgrounds -------------------------*/
 
 .bgLight
@@ -179,6 +91,94 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   background-repeat   : repeat-y;
 }
 
+/*--- Theme Colors --------------------------------------*/
+
+.themeLight
+{
+  color      : var(--themeLightFG);
+  background : var(--themeLightBG);
+}
+.themeLight a        { text-decoration:none     ; color:#0080FF; }
+.themeLight a:hover  { text-decoration:underline; color:#0080FF; }
+.themeLight a:active { text-decoration:underline; color:#FFFF00; }
+
+.themeMedium
+{
+  color      : var(--themeMediumFG);
+  background : var(--themeMediumBG);
+}
+.themeMedium a        { text-decoration:none     ; color:#80C0FF; }
+.themeMedium a:hover  { text-decoration:underline; color:#80C0FF; }
+.themeMedium a:active { text-decoration:underline; color:#FFFF80; }
+
+.themeDark
+{
+  color      : var(--themeDarkFG);
+  background : var(--themeDarkBG);
+}
+.themeDark a        { text-decoration:none     ; color:#00A0FF; }
+.themeDark a:hover  { text-decoration:underline; color:#00A0FF; }
+.themeDark a:active { text-decoration:underline; color:#FFFF80; }
+
+.themeBlue
+{
+  color      : var(--themeBlueFG);
+  background : var(--themeBlueBG);
+}
+.themeBlue a        { text-decoration:none     ; color:#00A0FF; }
+.themeBlue a:hover  { text-decoration:underline; color:#00A0FF; }
+.themeBlue a:active { text-decoration:underline; color:#FFFF80; }
+
+.popupColors
+{
+  color      : var(--popupFG);
+  background : var(--popupBG);
+}
+
+/*--- Opacities -----------------------------------------*/
+
+.opacity10 { opacity : 0.1; }
+.opacity20 { opacity : 0.2; }
+.opacity30 { opacity : 0.3; }
+.opacity40 { opacity : 0.4; }
+.opacity50 { opacity : 0.5; }
+.opacity60 { opacity : 0.6; }
+.opacity70 { opacity : 0.7; }
+.opacity80 { opacity : 0.8; }
+.opacity90 { opacity : 0.9; }
+
+/*--- Fonts ---------------------------------------------*/
+
+@font-face { font-family : font_adventure          ; src : url('Fonts/adventure.ttf'          ); }
+@font-face { font-family : font_airstrike          ; src : url('Fonts/airstrike.ttf'          ); }
+@font-face { font-family : font_anitaSemiSquare    ; src : url('Fonts/anitaSemiSquare.ttf'    ); }
+@font-face { font-family : font_atomicAge          ; src : url('Fonts/atomicAge.ttf'          ); }
+@font-face { font-family : font_audioWide          ; src : url('Fonts/audioWide.ttf'          ); }
+@font-face { font-family : font_beamweapon         ; src : url('Fonts/beamweapon.ttf'         ); }
+@font-face { font-family : font_beamweaponCondensed; src : url('Fonts/beamweaponCondensed.ttf'); }
+@font-face { font-family : font_calligraphy        ; src : url('Fonts/calligraphy.ttf'        ); }
+@font-face { font-family : font_code               ; src : url('Fonts/code.otf'	              ); }
+@font-face { font-family : font_ethnocentric       ; src : url('Fonts/ethnocentric.ttf'       ); }
+@font-face { font-family : font_Imaki              ; src : url('Fonts/Imaki.ttf'              ); }
+@font-face { font-family : font_monospaceTypewriter; src : url('Fonts/monospaceTypewriter.ttf'); }
+@font-face { font-family : font_rexlia             ; src : url('Fonts/rexlia.ttf'             ); }
+@font-face { font-family : font_robot              ; src : url('Fonts/robot.ttf'              ); }
+@font-face { font-family : font_robotoLight        ; src : url('Fonts/robotoLight.ttf'        ); }
+@font-face { font-family : font_robotoRegular      ; src : url('Fonts/robotoRegular.ttf'      ); }
+@font-face { font-family : font_sevenSegment_1     ; src : url('Fonts/sevenSegment_1.otf'     ); }
+@font-face { font-family : font_sevenSegment_2     ; src : url('Fonts/sevenSegment_2.ttf'     ); }
+@font-face { font-family : font_sevenSegment_3     ; src : url('Fonts/sevenSegment_3.ttf'     ); }
+@font-face { font-family : font_sevenSegment_4     ; src : url('Fonts/sevenSegment_4.ttf'     ); }
+@font-face { font-family : font_sonoRegular        ; src : url('Fonts/sonoRegular.ttf'        ); }
+@font-face { font-family : font_spaceAge           ; src : url('Fonts/spaceAge.ttf'           ); }
+@font-face { font-family : font_xcelItalic         ; src : url('Fonts/xcelItalic.ttf'         ); }
+@font-face { font-family : font_xcel               ; src : url('Fonts/xcel.ttf'               ); }
+
+.noWrap
+{
+  white-space : nowrap;
+}
+
 /*--- Layout --------------------------------------------*/
 
 .centered
@@ -195,17 +195,26 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
 {
   display         : flex;
   flex-flow       : row nowrap;
-  justify-content : center;      /* center justified */
-  align-items     : flex-start;  /* top justfified   */
+  justify-content : space-evenly;  /* spaced apart   */
+  align-items     : flex-start;    /* top justfified */
 }
 
 .flexColumn
 {
   display         : flex;
   flex-flow       : column nowrap;
-  justify-content : flex-start;   /* top justified   */
+  justify-content : flex-start;   /* top justified         */
   align-items     : center;       /* horizontally centered */
 }
+
+/*--- Scrollbars ----------------------------------------*/
+
+.dsScrollable                           { overflow   : auto; }
+.dsScrollable::-webkit-scrollbar        { width      : 0.5em; height:0.5em; background-color:transparent; }
+.dsScrollable::-webkit-scrollbar-track  { background : transparent; cursor:pointer; }
+.dsScrollable::-webkit-scrollbar-thumb  { background : linear-gradient(to bottom, var(--gradStart), var(--gradStop)); cursor:grab; border-radius:0.2em; }
+.dsScrollable::-webkit-scrollbar-button { display    : none; }
+.dsScrollable::-webkit-scrollbar-corner { background: rgba(0,0,0,0); }
 
 /*--- Thumbnails ----------------------------------------*/
 
@@ -213,7 +222,7 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
 {
   cursor     : pointer;
   border     : 1px solid transparent;
-  box-shadow : 0 0 4px 2px #000000;
+  box-shadow : 0 0 0.4em 0.2em #000000;
 }
 
 .thumb:hover
@@ -260,12 +269,12 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   display  : inline-block;
   position : absolute;
   top      : 0;
-  right    : 1.5vw;
+  right    : 1vw;
 
   color : #C00000;
 
   font-family : sans-serif;
-  font-size   : 4em;
+  font-size   : 3vw;
   font-weight : bold;
 
   cursor : pointer;
@@ -273,86 +282,107 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
 
 /*--- Titles --------------------------------------------*/
 
-.title
+.dsTitle
 {
-  font-family : font_audioWide, serif;
-  font-size   : 2em;
+  font-family : font_beamweapon, serif;
+  font-size   : 3em;
   font-weight : bold;
+  text-shadow : 0.08em 0.08em 0.08em var(--medium);
 }
 
-.subtitle
+.dsSubtitle
 {
-  font-family : font_audioWide, serif;
-  font-size   : 1.5em;
+  font-family : font_beamweaponCondensed, serif;
+  font-size   : 2em;
   font-weight : normal;
+  text-shadow : 0.04em 0.04em 0.04em var(--medium);
 }
 
 /*--- Panel Labels --------------------------------------*/
 
-.labelL { font-family:serif; font-size:1.5em; letter-spacing:-1px; text-shadow:0 2px 1px var(--light); }
-.labelM { font-family:serif; font-size:1.0em; letter-spacing: 0px; text-shadow:0 1px 1px var(--light); }
-.labelS { font-family:serif; font-size:0.8em; letter-spacing: 0px; text-shadow:0 1px 1px var(--light); }
+.dsLabelL { font-family:font_robotoRegular; font-size:2.0em; font-weight:800; letter-spacing:-0.03em; text-shadow:0.02em 0.02em 0 var(--light); }
+.dsLabelM { font-family:font_robotoRegular; font-size:1.5em; font-weight:600; letter-spacing:-0.03em; text-shadow:0.02em 0.02em 0 var(--light); }
+.dsLabelS { font-family:font_robotoRegular; font-size:1.0em; font-weight:400; letter-spacing:-0.03em; text-shadow:0.02em 0.02em 0 var(--light); }
 
 /*--- Dividers ------------------------------------------*/
 
-.dividerH
+.dsDividerH
 {
   display        : inline-block;
   width          : 100%;
-  height         : .4em;
-  border-radius  : .2em;
-  box-shadow     : 0 .1em 1px #404040 inset, 0 -.1em 1px #A0A0A0 inset;
-  background     : linear-gradient(to bottom, var(--gradStart), var(--gradStop));
+  height         : 0.2em;
+  border         : 0.2em inset #E0E0E0;
+  box-sizing     : border-box;
   vertical-align : middle;
 }
 
-.dividerV
+.dsDividerV
 {
   display        : inline-block;
-  width          : .5em;
+  width          : 0.2em;
   height         : 100%;
-  border-radius  : .25em;
-  box-shadow     : .1em 0 1px #404040 inset, -.1em 0 1px #A0A0A0 inset;
-  background     : linear-gradient(to bottom, var(--gradStart), var(--gradStop));
-  vertical-align : middle;
+  border         : 0.2em inset #E0E0E0;
+  box-sizing     : border-box;
+  vertical-align : top;
 }
 
 /*--- Content Blocks ------------------------------------*/
 
-.block
+.dsBlock
 {
-  display        : inline-block;
+  display  : inline-block;
+  position : relative;
+  margin   : 0;
+  padding  : 0;
+  overflow : auto;
+
+  font-size      : inherit;
+  text-align     : left;
   vertical-align : top;
 }
 
-.blockRuled
+.dsBlockRuled
 {
   display       : inline-block;
-  padding       : 1em;
+  position      : relative;
+  margin        : 0;
+  padding       : 0.5em;
+  overflow      : auto;
   border-radius : 0.5em;
+  border        : 0.2em groove #808080;
 
-  border : 4px groove #808080;
-
+  font-size      : inherit;
+  text-align     : left;
   vertical-align : top;
 }
 
-.blockRaised
+.dsBlockRaised
 {
   display       : inline-block;
-  padding       : 1em;
+  position      : relative;
+  margin        : 0;
+  padding       : 0.5em;
+  overflow      : auto;
   box-shadow    : 0 .1em .3em .1em var(--dark);
   border-radius : 0.5em;
 
+  font-size      : inherit;
+  text-align     : left;
   vertical-align : top;
 }
 
-.blockLowered
+.dsBlockLowered
 {
   display       : inline-block;
-  padding       : 1em;
+  position      : relative;
+  margin        : 0;
+  padding       : 0.5em;
+  overflow      : auto;
   box-shadow    : 0 .1em .3em .1em var(--dark) inset;
   border-radius : 0.5em;
 
+  font-size      : inherit;
+  text-align     : left;
   vertical-align : top;
 }
 
@@ -363,38 +393,37 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   display               : grid;
   grid-template-columns : max-content auto;  /* modify in your HTML for more columns */
   align-items           : center;
-  gap                   : 0.3em;
+  padding               : 0.5em;
+  gap                   : 0.2em;
   overflow              : hidden;
+  font-size             : inherit;
+  text-align            : left;
 }
 
 .dsGridForm label
 {
-  font-size   : inherit;
+  font-family : font_robotoRegular, sans-serif;
+  font-weight : bold;
   text-align  : right;
-}
-
-.dsGridForm input
-{
-  font-size  : inherit;
-  text-align : left;
 }
 
 /*--- Buttons -------------------------------------------*/
 
 .dsButton
 {
-  position : relative;
-  padding  : 0.1em 0.5em 0.1em 0.5em;
-  cursor   : pointer;
+  margin-bottom : 0.15rem;
+  padding       : 0.2em 0.5em 0.2em 0.5em;
+  cursor        : pointer;
 
   border         : none;
-  border-radius  : 0.1em;
+  border-radius  : 0.2em;
   font-size      : inherit;
   line-height    : 1;
   vertical-align : bottom;
+  white-space    : pre;
 
   background  : linear-gradient(to bottom, var(--light), var(--medium));
-  text-shadow : 0.02em 0.02em #808080;
+  text-shadow : 0.02em 0.02em var(--light);
 
   box-shadow : 0  0.04em 0.02em 0.04em rgba(255, 255, 255, 0.6) inset,
                0 -0.04em 0.02em 0.04em rgba(  0,   0,   0, 0.2) inset,
@@ -403,14 +432,15 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
 
 .dsButton:active
 {
-  padding : 0.15em 0.5em 0.05em 0.5em;
+  padding : 0.25em 0.5em 0.15em 0.5em;  /* vertically adjusted from non-active padding */
 
-  background : linear-gradient(to bottom, var(--gradStart), var(--gradStop));
-  /* text-shadow      : 0.02em 0.02em #0060A0; */
+  background  : linear-gradient(to bottom, var(--gradStart), var(--gradStop));
+  text-shadow : 0.02em 0.02em #00A0F0;
 
-  box-shadow       : 0  0.1em 0.1em var(--gradStop ) inset,
-                     0 -0.1em 0.1em var(--gradStart) inset,
-                     0  0 0.02em 0.04em rgba(0, 0, 0, 0.5);
+  box-shadow : 0  0.1em 0.1em var(--gradStop ) inset,
+               0 -0.1em 0.1em var(--gradStart) inset,
+               0  0     0.02em 0.04em rgba(0, 0, 0, 0.5);
+
 }
 
 /*--- Buttons (Round) -----------------------------------*/
@@ -432,6 +462,7 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   font-size      : inherit;
   line-height    : 1;
   vertical-align : bottom;
+  white-space    : pre;
 
   background  : linear-gradient(to bottom, var(--light), #A0A0A0);
   text-shadow : .02em .02em #D0D0D0;
@@ -458,35 +489,25 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
 /*  Default inputs (dsInput)                             */
 /*=======================================================*/
 /*                                                       */
-/*  Standard input types:       Custom inputs:           */
-/*  ─────────────────────       ──────────────           */
-/*    ∙ button                    ∙ switch               */
-/*    ∙ checkbox                  ∙ slider               */
-/*    ∙ color                     ∙ spinner              */
-/*    ∙ date                      ∙ e-stop               */
-/*    ∙ datetime-local                                   */
-/*    ∙ email                                            */
-/*    ∙ file                                             */
-/*    ∙ hidden                                           */
-/*    ∙ image                                            */
-/*    ∙ month                                            */
-/*    ∙ number                                           */
-/*    ∙ password                                         */
-/*    ∙ radio                                            */
-/*    ∙ range                                            */
-/*    ∙ reset                                            */
-/*    ∙ search                                           */
-/*    ∙ submit                                           */
-/*    ∙ tel                                              */
-/*    ∙ text                                             */
-/*    ∙ ti                                               */
-/*    ∙ url                                              */
-/*    ∙ week                                             */
+/*  Standard input types:                                */
+/*  ───────────────────────────────────────────────────  */
+/*    ∙ button                 ∙ password                */
+/*    ∙ checkbox               ∙ radio                   */
+/*    ∙ color                  ∙ range (slider)          */
+/*    ∙ date                   ∙ reset                   */
+/*    ∙ datetime-local         ∙ search                  */
+/*    ∙ email                  ∙ submit                  */
+/*    ∙ file                   ∙ tel                     */
+/*    ∙ hidden                 ∙ text                    */
+/*    ∙ image                  ∙ ti                      */
+/*    ∙ month                  ∙ url                     */
+/*    ∙ number                 ∙ week                    */
 /*                                                       */
 /*=======================================================*/
 
 .dsInput
 {
+  margin-bottom : 0.1em;
   padding       : 0.2em 0.2em 0.1em 0.2em;
   height        : 1em;
   border        : none;
@@ -520,26 +541,27 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
 
 .dsInput[type="button"]
 {
-  padding : 0.15em 0.2em 0.15em 0.2em;
+  padding : 0.15em 0.2em 0.2em 0.2em;
   height  : 1.25em;
 
   box-shadow : 0  0.04em 0.02em 0.04em rgba(255, 255, 255, 0.6) inset,
                0 -0.04em 0.02em 0.04em rgba(  0,   0,   0, 0.2) inset,
                0  0      0.02em 0.04em rgba(  0,   0,   0, 0.5);
 
-  text-align : center;
+  text-shadow : 0.02em 0.02em var(--light);
+  text-align  : center;
 }
 
 .dsInput[type="button"]:active
 {
-  padding : 0.2em 0.2em 0.1em 0.2em;  /* vertically adjusted from non-active padding */
+  padding : 0.2em 0.2em 0.15em 0.2em;  /* vertically adjusted from non-active padding */
 
-  background : linear-gradient(to bottom, var(--gradStart), var(--gradStop));
-  /* text-shadow      : 0.02em 0.02em #0060A0; */
+  background  : linear-gradient(to bottom, var(--gradStart), var(--gradStop));
+  text-shadow : 0.02em 0.02em #00A0F0;
 
-  box-shadow       : 0  0.1em 0.1em var(--gradStop ) inset,
-                     0 -0.1em 0.1em var(--gradStart) inset,
-                     0  0 0.02em 0.04em rgba(0, 0, 0, 0.5);
+  box-shadow : 0  0.1em 0.1em var(--gradStop ) inset,
+               0 -0.1em 0.1em var(--gradStart) inset,
+               0  0 0.02em 0.04em rgba(0, 0, 0, 0.5);
 }
 
 /*--- type="checkbox" -----------------------------------*/
@@ -555,18 +577,18 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   padding     : 0;
   top         : 0;
   left        : 0;
-  width       : 1.3em;
-  height      : 1.3em;
-  line-height : 1.3em;
+  width       : 1.2em;
+  height      : 1.0em;
+  line-height : 1.0em;
 }
 
 .dsInput[type="checkbox"]:checked::after
 {
   position     : absolute;
-  padding-left : 0.3em;
+  padding-left : 0.25em;
   box-sizing   : border-box;
-  width        : 1.3em;
-  height       : 1.3em;
+  width        : 1.2em;
+  height       : 1.0em;
 
   border-radius : 0.2em;
   color         : var(--light);
@@ -650,13 +672,14 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   -webkit-appearance : none;
   appearance         : none;
 
-  position : relative;
-  margin   : 0;
-  padding  : 0;
-  top      : 0;
-  left     : 0;
-  width    : 1.3em;
-  height   : 1.3em;
+  position    : relative;
+  margin      : 0;
+  padding     : 0;
+  top         : 0;
+  left        : 0;
+  width       : 1.0em;
+  height      : 1.0em;
+  line-height : 1.0em;
 
   border-radius : 50%;
 }
@@ -668,8 +691,8 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   margin   : 0;
   left     : 0;
   top      : 0;
-  width    : 1.3em;
-  height   : 1.3em;
+  width    : 1.0em;
+  height   : 1.0em;
   content  : "";
 
   border        : none;
@@ -700,7 +723,7 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   appearance         : none;
 
   width         : 1.3em;
-  height        : 1.2em;
+  height        : 1.25em;
   border        : none;
   border-radius : 0.2em;
   cursor        : grab;
@@ -718,7 +741,7 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   appearance         : none;
 
   width         : 1.3em;
-  height        : 1.2em;
+  height        : 1.25em;
   border        : none;
   border-radius : 0.2em;
   cursor        : grab;
@@ -737,18 +760,6 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
 {
   height : 1.3em;
 }
-
-
-/*=======================================================*/
-/*  Custom inputs                                        */
-/*=======================================================*/
-/*                                                       */
-/*  ∙ switch                                             */
-/*  ∙ slider                                             */
-/*  ∙ spinner                                            */
-/*  ∙ e-stop                                             */
-/*                                                       */
-/*=======================================================*/
 
 /*--- Switch --------------------------------------------*/
 
@@ -796,7 +807,7 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
                0 -0.04em 0.02em 0.04em rgba(  0,   0,   0, 0.2) inset,
                0  0      0.02em 0.04em rgba(  0,   0,   0, 0.5);
 
-  transition    : 0.1s;
+  transition : 0.1s;
 }
 
 .dsSwitch:checked::before /* switch on */
@@ -831,116 +842,12 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   text-shadow : 0 0 0.05em #00C000;
 }
 
-
-
-
-/*--- Slider --------------------------------------------*/
-
-
-
-
-
-/*--- Spinner -------------------------------------------*/
-
-
-
-
-
-/*--- E-Stop Button -------------------------------------*/
-
-.dsEStop input
-{
-  -moz-appearance    : none;
-  -webkit-appearance : none;
-  appearance         : none;
-
-  margin    : 0;
-  font-size : inherit;
-}
-
-/*--- Yellow Plate ---*/
-.dsEStop
-{
-  display       : inline-block;
-  position      : relative;
-  font-size     : inherit;
-  margin        : 0;
-  left          : 0;
-  top           : 0;
-  width         : 5em;
-  height        : 5.5em;
-  border-radius : 1em;
-
-  color      : var(--dark);
-  background : linear-gradient(to bottom, #F0F020, #C0C000);
-  box-shadow : 0 -.1em 0     0    rgba(255, 255, 0, 1 ),
-               0  .1em .1em .05em rgba(  0,   0, 0, .5);
-
-  text-align     : center;
-  text-shadow    : 1px 1px 1px var(--light);
-  vertical-align : top;
-}
-
-/*--- Emergency Stop ---*/
-.dsEStop::before
-{
-  position    : absolute;
-  content     : "Emergency\A \A \A \A \A Stop";
-  left        : 0.9em;
-  top         : 0.1em;
-  width       : 5em;
-  white-space : pre-wrap;
-  font-size   : 0.74em;
-  text-align  : center;
-}
-
-/*--- Red Button ---*/
-.dsEStop::after
-{
-  position      : absolute;
-  content       : "";
-  left          : 0.75em;
-  top           : 0.95em;
-  width         : 3.5em;
-  height        : 3.5em;
-  border-radius : 50%;
-  cursor        : pointer;
-
-  background : linear-gradient(to bottom, #D02020, #A01010);
-  box-shadow : 0 -.1em .02em .05em rgba(128,  0,  0, 1) inset,
-               0  .1em .02em .05em rgba(255, 64, 64, 1) inset,
-               0  .6em .2em 0 rgba(32, 0, 0, .5);
-}
-
-/*--- E-Stop Pressed (checked) ---*/
-.dsEStop input:checked::after
-{
-  position    : absolute;
-  content     : "\A \20 \20 Reset";
-  left        : 0.65em;
-  top         : 0.95em;
-  cursor      : pointer;
-  white-space : pre-wrap;
-  z-index     : 100;
-
-  color       : var(--light);
-  text-shadow : 0 -2px 2px #601010,
-                0  2px 2px #F02020;
-}
-
-
-
-
-
-
-
-
-/*--- Select (drop down) --------------------------------*/
+/*--- Select (pull down) --------------------------------*/
 
 .dsSelect
 {
-  margin-top : .2em;
-  padding    : .2em .5em;
+  /* margin-top : .2em; */
+  padding    : 0.2em 0.2em 0.1em 0.2em;
   width      : 10em;  /* default */
   cursor     : pointer;
 
@@ -950,8 +857,8 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   border        : none;
   border-radius : .2em;
   background    : linear-gradient(to bottom, #C0C0C0, var(--light));
-  box-shadow    : 0  .1em 1px #404040 inset,
-                  0 -.1em 1px var(--light) inset;
+  box-shadow    : 0  .1em 0.05em #404040 inset,
+                  0 -.1em 0.05em var(--light) inset;
 
   vertical-align : baseline;
 }
@@ -990,7 +897,7 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   font-size      : 1.2em;
   font-weight    : normal;
   white-space    : nowrap;
-  text-shadow    : 0.1em 0.1em 0.1em var(--dark);
+  text-shadow    : 0.05em 0.05em 0.05em var(--dark);
   text-align     : left;
 }
 
@@ -1029,16 +936,17 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   align-items     : center;
 
   width         : 100%;
-  padding       : .2em 1em .3em 1em;
+  padding       : .2em 0.5em .3em 0.5em;
   box-sizing    : border-box;
   border-radius : 0.2em 0.2em 0 0;
+  color         : var(--light);
   background    : linear-gradient(to bottom, var(--gradStart), var(--gradStop));
 
   font-family    : Verdana, sans-serif;
   font-size      : 1.2em;
   font-weight    : normal;
   white-space    : nowrap;
-  /* text-shadow    : 0.1em 0.1em 0.1em var(--dark); */
+  text-shadow    : 0.05em 0.05em 0.05em var(--dark);
   text-align     : left;
 }
 
@@ -1093,7 +1001,7 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   padding : .2em .5em .3em .5em;
   z-index : 0;
 
-  border           : 1px solid var(--dark);
+  border           : 0.05em solid var(--dark);
   border-radius    : 0.2em 0.2em 0 0;
 
   color      : var(--dark);
@@ -1112,7 +1020,7 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   color       : var(--light);
   background  : linear-gradient(to bottom, var(--gradStart), var(--gradStop));
   box-shadow  : 0 .1em .2em .1em var(--dark);
-  text-shadow : 0.1em 0.1em 0.1em var(--dark);
+  text-shadow : 0.05em 0.05em 0.05em var(--dark);
   z-index     : 10;
 }
 
@@ -1137,56 +1045,145 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   text-align : left;
 }
 
-/*--- LEDs (Red, Green, Blue, Yellow, Orange, White) ----*/
+/*--- PopupBubble ---------------------------------------*/
 
-.dsLEDOff { display:inline-block; width:1em; height:1em; border-radius:50%; background:radial-gradient(circle closest-side at 50% 40%, var(--white)  1%, #C0C0C0, #A0A0A0); box-shadow:0 .1em .2em var(--dark), 0 -.2em .1em var(--light); }
-.dsLEDR   { display:inline-block; width:1em; height:1em; border-radius:50%; background:radial-gradient(circle closest-side at 50% 40%, #FF8080 20%, #FF0000, #F00000); box-shadow:0 .2em .4em #400000, 0 -.2em .1em var(--light); }
-.dsLEDG   { display:inline-block; width:1em; height:1em; border-radius:50%; background:radial-gradient(circle closest-side at 50% 40%, var(--white)  1%, #00FF00, #00C000); box-shadow:0 .2em .4em #004000, 0 -.2em .1em var(--light); }
-.dsLEDB   { display:inline-block; width:1em; height:1em; border-radius:50%; background:radial-gradient(circle closest-side at 50% 40%, var(--white)  1%, #0060FF, #0040E0); box-shadow:0 .2em .4em #000040, 0 -.2em .1em var(--light); }
-.dsLEDY   { display:inline-block; width:1em; height:1em; border-radius:50%; background:radial-gradient(circle closest-side at 50% 40%, var(--white)  1%, #FFFF00, #E0E000); box-shadow:0 .2em .4em #404000, 0 -.2em .1em var(--light); }
-.dsLEDO   { display:inline-block; width:1em; height:1em; border-radius:50%; background:radial-gradient(circle closest-side at 50% 40%, var(--white)  1%, #FF8000, #C06000); box-shadow:0 .2em .4em #402000, 0 -.2em .1em var(--light); }
-.dsLEDP   { display:inline-block; width:1em; height:1em; border-radius:50%; background:radial-gradient(circle closest-side at 50% 40%, var(--white)  1%, #D000FF, #8000C0); box-shadow:0 .2em .4em #400080, 0 -.2em .1em var(--light); }
-.dsLEDW   { display:inline-block; width:1em; height:1em; border-radius:50%; background:radial-gradient(circle closest-side at 50% 40%, var(--white)  1%, var(--white), #E0E0E0); box-shadow:0 .2em .4em #808080, 0 -.2em .1em var(--light); }
+#screenBubble
+{
+  display       : inline-block;
+  position      : absolute;
+  padding       : 0.8vw;
+  border-radius : 0.2vw;
+  z-index       : 300;
 
-/*--- Panel Lights (Red, Green, Blue, Yellow, Orange, White) ----*/
+  box-shadow : 0.2vw 0.2vw 0.4vw #000000, 0 0 0.2vw #000000 inset;
 
-.dsPanelLightOff { display:inline-block; width:2em; height:2em; border-radius:50%; background:radial-gradient(circle, #808080 40%, #404040); box-shadow:0 .1em .2em var(--dark), 0 -.2em .1em var(--light); }
-.dsPanelLightR   { display:inline-block; width:2em; height:2em; border-radius:50%; background:radial-gradient(circle, #FF2020 40%, #801010); box-shadow:0 .2em .4em #400000, 0 -.2em .1em var(--light); }
-.dsPanelLightG   { display:inline-block; width:2em; height:2em; border-radius:50%; background:radial-gradient(circle, #00FF00 40%, #008000); box-shadow:0 .2em .4em #004000, 0 -.2em .1em var(--light); }
-.dsPanelLightB   { display:inline-block; width:2em; height:2em; border-radius:50%; background:radial-gradient(circle, #0060FF 30%, #004080); box-shadow:0 .2em .4em #000040, 0 -.2em .1em var(--light); }
-.dsPanelLightY   { display:inline-block; width:2em; height:2em; border-radius:50%; background:radial-gradient(circle, #FFFF00 50%, #808000); box-shadow:0 .2em .4em #404000, 0 -.2em .1em var(--light); }
-.dsPanelLightO   { display:inline-block; width:2em; height:2em; border-radius:50%; background:radial-gradient(circle, #FF8000 40%, #A06000); box-shadow:0 .2em .4em #402000, 0 -.2em .1em var(--light); }
-.dsPanelLightP   { display:inline-block; width:2em; height:2em; border-radius:50%; background:radial-gradient(circle, #D000FF 40%, #8000C0); box-shadow:0 .2em .4em #400080, 0 -.2em .1em var(--light); }
-.dsPanelLightW   { display:inline-block; width:2em; height:2em; border-radius:50%; background:radial-gradient(circle, var(--white) 40%, #C0C0C0); box-shadow:0 .2em .4em #808080, 0 -.2em .1em var(--light); }
+  font-family : sans-serif;
+  font-size   : 0.8vw;
+  text-align  : center;
+}
 
+/*--- E-Stop Button -------------------------------------*/
+/* Use: <label class="eStop" style="font-size:2vw"><input type="checkbox" /></label> */
 
+.eStop input
+{
+  -moz-appearance    : none;
+  -webkit-appearance : none;
+  appearance         : none;
 
+  margin    : 0;
+  font-size : inherit;
+}
 
+/*--- Yellow Plate ---*/
+.eStop
+{
+  display       : inline-block;
+  position      : relative;
+  font-size     : inherit;
+  margin        : 0;
+  left          : 0;
+  top           : 0;
+  width         : 5em;
+  height        : 5.5em;
+  border-radius : 1em;
 
+  color      : var(--dark);
+  background : linear-gradient(to bottom, #F0F020, #C0C000);
+  box-shadow : 0 -.1em 0     0    rgba(255, 255, 0, 1 ),
+               0  .1em .1em .05em rgba(  0,   0, 0, .5);
 
+  text-align     : center;
+  text-shadow    : 1px 1px 1px var(--light);
+  vertical-align : top;
+}
+
+/*--- Emergency Stop ---*/
+.eStop::before
+{
+  position    : absolute;
+  content     : 'Emergency\A \A \A \A \A Stop';
+  left        : 0.9em;
+  top         : 0.1em;
+  width       : 5em;
+  white-space : pre-wrap;
+  font-size   : 0.74em;
+  text-align  : center;
+}
+
+/*--- Red Button ---*/
+.eStop::after
+{
+  position      : absolute;
+  content       : '';
+  left          : 0.75em;
+  top           : 0.95em;
+  width         : 3.5em;
+  height        : 3.5em;
+  border-radius : 50%;
+  cursor        : pointer;
+
+  background : linear-gradient(to bottom, #D02020, #A01010);
+  box-shadow : 0 -.1em .02em .05em rgba(128,  0,  0, 1) inset,
+               0  .1em .02em .05em rgba(255, 64, 64, 1) inset,
+               0  .6em .2em 0 rgba(32, 0, 0, .5);
+}
+
+/*--- E-Stop Pressed (checked) ---*/
+.eStop input:checked::after
+{
+  position    : absolute;
+  content     : '\A \20 \20 Reset';
+  left        : 0.64em;
+  top         : 0.95em;
+  cursor      : pointer;
+  white-space : pre-wrap;
+  z-index     : 100;
+
+  color       : var(--light);
+  text-shadow : 0 -2px 2px #601010,
+                0  2px 2px #F02020;
+}
+
+.eStopFlasher
+{
+  box-shadow : 0 0 1em 1em rgba(255,  0,  0, 1);
+}
+
+/*--- Draggable -----------------------------------------*/
+
+.draggable
+{
+  display     : inline-block;
+  position    : relative;
+  box-sizing  : border-box;
+  cursor      : grab;
+  white-space : nowrap;
+  user-select : none;
+}
 
 /*--- Code Samples (use with <pre>) ---------------------*/
 
 .dsCode
 {
   display     : inline-block;
-  margin-left : 2em;
-  padding     : 1em;
+  padding     : 0.5em 1em;
 
   color       : #C0C0C0;
   background  : #303030;
-  border-left : 10px solid #C06030;
+  border-left : 1em solid #C06030;
 
-  font-family : "Lucida Console", Monaco, monospace;
-  font-size   : small;
-  line-height : 1.2;
+  font-family    : monospace;
+  font-size      : 1em;
+  line-height    : 1.1em;
 
-  text-align : left;
+  text-align  : left;
+  white-space : pre;
 }
 
 /*--- Menus ---------------------------------------------*/
 
-#pageMenu
+.dsPageMenu
 {
   display    : inline-block;
   margin     : 0;
@@ -1196,12 +1193,13 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   z-index  : 200;
   overflow : hidden;
 
+  color         : var(--light);
   background    : linear-gradient(to bottom, var(--gradStart), var(--gradStop));
   border-radius : 0 0 0.2em 0.2em;
-  box-shadow    : 0 0.2em 0.2em 0.1em var(--dark);
+  box-shadow    : 0 0.2em 0.2em 0.2em var(--dark);
 }
 
-.menuTitle
+.dsMenuTitle
 {
   margin     : 0;
   padding    : 0.2em 1em;
@@ -1215,339 +1213,118 @@ a:visited { text-decoration:none; color:var(--clickable); border:0px; }
   box-shadow          : 0.05em 0.05em 0.1em 0.05em var(--dark) inset;
 
   font-family : Verdana, sans-serif;
-  font-size   : 1em;
+  font-size   : 1.2em;
   font-weight : bold;
 
   text-align : center;
 }
 
-.menuSubTitle
+.dsMenuSection
 {
   margin     : 0;
-  padding    : 0.1em 0.5em;
+  padding    : 0.4em 0.5em 0.1em 0.5em;
   box-sizing : border-box;
 
-  color               : #000080;
-  background-color    : #C0C0C0;  /* fallback */
-  background-image    : url('Images/bg_BrushedMetal_Light.jpg');
-  background-position : center top;
-  background-repeat   : repeat-y;
-  box-shadow          : 1px 1px 3px 1px var(--dark) inset;
-
   font-family : Verdana, sans-serif;
-  font-size   : 0.8em;
-  font-weight : bold;
+  font-size   : 1.1em;
+  font-weight : normal;
 
   text-align : center;
 }
 
-.menuButton
+.dsMenuButton
 {
   margin     : 0;
   padding    : 0.1em 0.5em;
   width      : 100%;
   box-sizing : border-box;
 
-  border-left   : 1px solid #808080;
-  border-top    : 1px solid #808080;
-  border-right  : 1px solid #000000;
-  border-bottom : 1px solid #000000;
-  outline       : 0px;
+  border-left   : 0.1em solid #808080;
+  border-top    : 0.1em solid #808080;
+  border-right  : 0.1em solid #000000;
+  border-bottom : 0.1em solid #000000;
+  outline       : 0;
 
   color      : #C0C0C0;
   background : #303030;
 
   font-family : Verdana, sans-serif;
-  font-size   : 0.8em;
+  font-size   : 1em;
   font-weight : normal;
 
   text-align : center;
   cursor     : pointer;
 }
 
-.menuButton:hover
+.dsMenuButton:hover
 {
   color      : #FFFF00;
   background : #606060;
 }
 
-/*--- dsDigital -----------------------------------------*/
-
-.dsDigital
-{
-  display : inline-block;
-  padding : 0.2em 0.2em 0 0.2em;
-
-  border-left   : 0.05em solid var(--dark);
-  border-top    : 0.05em solid var(--dark);
-  border-right  : 0.05em solid var(--light);
-  border-bottom : 0.05em solid var(--light);
-  border-radius : 0.1em;
-
-  color      : #00FF10;
-  background : linear-gradient(to bottom, #505050, #303030);
-
-  font-family    : font_sevenSegment_1, monospace;
-  font-size      : 1em;
-  font-weight    : normal;
-  /* letter-spacing : 0.05em; */
-  line-height    : 1;
-
-  text-align     : right;
-  vertical-align : bottom;
-}
-
-/*--- PopupBubble ---------------------------------------*/
-
-#screenBubble
-{
-  display       : inline-block;
-  position      : absolute;
-  padding       : 0.6em;
-  border-radius : 0.3em;
-  z-index       : 300;
-
-  box-shadow : 0 0 0.5em #000000, 0 0 0.2em #000000 inset;
-
-  font-family : sans-serif;
-  font-size   : 0.6em;
-  text-align  : center;
-}
-
-
-
-/*=========================================================
-  Mobile Web App Frame Styles:
-
-  ┌─────────────────────────┐
-  │ App Bar                 │
-  ├─────────────────────────┤
-  │                         │
-  │                         │
-  │                         │
-  │                         │
-  │ Content Area            │
-  │                         │
-  │                         │
-  │                         │
-  │                         │
-  │                         │
-  │                         │
-  │                         │
-  │                         │
-  ├─────────────────────────┤
-  │ Nav Bar                 │
-  └─────────────────────────┘
-
-=========================================================*/
-
-/*--- body ----------------------------------------------*/
-
-body
-{
-  margin   : 0;
-  padding  : 0;
-  width    : 100vw;
-  height   : 100vh;
-  overflow : hidden;
-
-  display         : flex;
-  flex-flow       : column;
-  justify-content : space-between;
-  align-items     : center;
-
-  color      : var(--light);
-  background : var(--dark);
-
-  /* defaults */
-  font-family : sans-serif;
-  font-size   : 16px;
-  font-weight : normal;
-
-  touch-action : manipulation;
-}
-
 /*--- Splash --------------------------------------------*/
 
-#splash
+#dsSplash
 {
-  /* display    : inline-block; */
-  margin-top : 20px;
+  display         : flex;
+  flex-flow       : column nowrap;
+  justify-content : space-evenly;
+  align-items     : center;
+
+  margin     : 0;
+  padding    : 0;
+  width      : 100vw;
+  height     : 100vh;
+
+  color      : var(--light);
+  background : url('Images/bg_BrushedMetal_Dark.jpg');
+
   text-align : center;
 }
 
-#splash_Welcome
+#dsSplashWelcome
 {
   font-family : font_calligraphy;
-  font-size   : clamp(50px, 6vw, 100px);
-  text-shadow : 0.05em 0.05em 0.05em var(--dark);
+  font-size   : clamp(50px, 6vw, 80px);
+  text-shadow : 0.02em 0.02em 0 var(--dark);
 }
 
-#splash_Title
+#dsSplashTitle
 {
   color          : var(--dsTeal);
   font-family    : font_ethnocentric, serif;
-  font-size      : clamp(30px, 6vw, 80px);
+  font-kerning   : none;
+  font-size      : clamp(30px, 5vw, 60px);
   letter-spacing : 0.1em;
   text-shadow    : 0.1em 0.1em 0.1em var(--dark);
   white-space    : nowrap;
 }
 
-#splash_Version
+#dsSplashLogo
+{
+  width : clamp(200px, 50vw, 400px);
+}
+
+#dsSplashVersion
 {
   color       : var(--light);
   font-family : serif;
-  font-size   : clamp(16px, 2vw, 30px);
-  line-height : 1;
-  text-shadow : 1px 1px 0px var(--dark);
+  font-size   : clamp(20px, 3vw, 30px);
+  text-shadow : 0.05em 0.05em 0.1em var(--dark);
 }
 
-#splash_GetStarted
+#dsSplashButton
 {
-  padding : 0.5em 1em;
+  padding : 0.2em 0.7em 0.2em 0.5em;
 
   font-family : font_airstrike, serif;
-  font-size   : clamp(16px, 6vw, 60px);
+  font-size   : clamp(30px, 5vw, 50px);
 }
 
-/*--- App Bar -------------------------------------------*/
-
-#appBar
-{
-  width      : 100vw;
-  margin     : 0;
-  padding    : clamp(5px, 1vw, 10px);
-  box-sizing : border-box;
-  overflow   : hidden;
-  z-index    : 10;
-
-  box-shadow : 0 0 1vw var(--dark);
-
-  display         : flex;
-  flex-flow       : row nowrap;
-  justify-content : left;   /* space-between; */
-  align-items     : center;
-}
-
-.appBarIcon
-{
-  height : clamp(40px, 7vw, 70px);
-  vertical-align : middle;
-}
-
-#titleAndVersion
-{
-  display     : inline-block;
-  margin-left : 1vw;
-  text-align  : center;
-}
-
-#appTitle
-{
-  color      : var(--light);
-  background : transparent;
-
-  font-family    : font_ethnocentric, serif;
-  font-size      : clamp(20px, 4vw, 40px);
-  letter-spacing : 0.15vw;
-  line-height    : 1;
-  text-shadow    : 0.2vw 0.2vw 0.2vw var(--dark);
-  white-space    : nowrap;
-
-  vertical-align : baseline;
-}
-
-#appVersion
+#dsSplashCopyright
 {
   font-family : serif;
-  font-size   : clamp(15px, 2vw, 20px);
-  line-height : 1;
-  text-shadow : 1px 1px 0px var(--dark);
-}
-
-/*--- Content Area & Pages ---------------------------------*/
-
-#contentArea
-{
-  flex       : 1;
-  width      : 100vw;
-  margin     : 0;
-  padding    : 1vw;
-  box-sizing : border-box;
-  overflow   : auto;
-  z-index    : 0;
-  text-align : center;
-}
-
-.contentPage
-{
-  display : none;
-}
-
-/*--- Bottom Navigation Bar -----------------------------*/
-
-#navBar
-{
-  display         : flex;
-  flex-flow       : row nowrap;
-  justify-content : space-around;
-  align-items     : center;
-
-  width      : 100vw;
-  margin     : 0;
-  padding    : clamp(5px, 1vw, 10px);
-  box-sizing : border-box;
-  overflow   : hidden;
-  z-index    : 10;
-
-  box-shadow : 0 0 1vw #000000;
-}
-
-.navButton
-{
-  margin  : 0;
-  padding : 0.5vw 1vw;
-
-  color         : var(--light);
-  background    : transparent;
-  border        : 1px solid transparent;
-  border-radius : 1vw;
-  box-sizing    : border-box;
-
-  font-family : sans-serif;
-  font-size   : clamp(15px, 2vw, 25px);
-  font-weight : normal;
-  line-height : 1;
-  white-space : nowrap;
-
-  cursor : pointer;
-
-  vertical-align : middle;
-}
-
-.navButton:hover
-{
-  border : 1px solid #808080;
-}
-
-.navButton.viewing
-{
-  color      : #404040;
-  background : linear-gradient(to bottom, var(--light), #808080);
-  border     : 1px solid transparent;
-}
-
-.navButton span
-{
-  margin  : 0;
-  padding : 0;
-
-  font-size   : clamp(30px, 4vw, 50px);
-  line-height : 1;
-}
-
-.navButton img
-{
-  margin : 0;
-  height : clamp(30px, 5vw, 40px);
+  font-size   : clamp(16px, 1.5vw, 24px);
+  font-style  : italic;
+  text-shadow : 1px 1px 1px var(--dark);
 }

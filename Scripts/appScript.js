@@ -22,10 +22,6 @@ try
   // Browser stuff
   window.devicePixelRatio = 1.0;  // set pixel density to 1
 
-  // Splash is showing, so hide appBar and navBar
-  $("#appBar").hide ();
-  $("#navBar").hide ();
-
   // Load all pages
   LoadContentPages ();
 }
@@ -40,9 +36,10 @@ function Startup ()
 {
   try
   {
-    // Show appBar and navBar
-    $("#appBar").show ();
-    $("#navBar").show ();
+    // Hide Splash and show app screen
+    $("#dsSplash" ).hide ();
+    $("#appScreen").show ();
+    $("#appScreen").css  ('display', 'flex');
 
     // Click on first navButton
     // $(".navButton").first().mousedown();  // Not working for pointerdown; no pointerdown() method in jQuery ???
