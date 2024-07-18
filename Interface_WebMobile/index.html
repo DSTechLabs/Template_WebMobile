@@ -1,0 +1,146 @@
+<!doctype html>
+<!--=======================================================
+//
+//     FILE : index.html
+//
+//  PROJECT : Mobile Web App Template
+//
+//   AUTHOR : Bill Daniels
+//            Copyright 2023-2024, D+S Tech Labs, Inc.
+//            MIT License
+//
+//======================================================-->
+
+<html lang="en-us">
+
+  <!-- Head -->
+  <head>
+
+    <!-- These three meta tags MUST come first in the <head> tag. -->
+    <!-- All other <head> content must come AFTER these tags.     -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>My App</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="dsStyles.css" />
+    <link rel="stylesheet" href="appStyles.css" />
+
+    <!-- Scripts -->
+    <script src="Scripts/jquery-3.7.1.min.js"></script>
+    <script src="Scripts/dsExtras.js"></script>
+
+  </head>
+
+  <!-- Body -->
+  <body class="disable-select" oncontextmenu="return false;" onpointerdown="HideMenu()">
+
+    <!-- For Full Screen Modal Popups -->
+    <div id="modalBackdrop" class="dsScrollable"></div>
+
+
+    <!--================================================-->
+    <!--  dsSplash                                        -->
+    <!--================================================-->
+    <div id="dsSplash" class="themeDark scrollable">
+
+      <div>
+        <div id="dsSplashWelcome">Welcome to the</div>
+        <div id="dsSplashTitle">App Title Here</div>
+        <br>
+
+        <img id="dsSplashLogo" src="Images/yourLogo.png" style="width:200px" /><br>
+        <br>
+
+        <div id="dsSplashVersion">──── Version 2024.07.17 ────</div>
+        <br>
+        <br>
+
+        <button id="dsSplashButton" class="dsButton" onpointerdown="StopEvent(event); GoFullscreen(Startup)"> <big><i>Open</i></big> &nbsp; ⯈⯈⯈ </button>
+      </div>
+
+      <div id="dsSplashCopyright">
+        Copyright 2024, D+S Tech Labs, Inc.<br>
+        All Rights Reserved
+      </div>
+
+    </div>
+
+    <!-- Full Screen -->
+    <div id="appScreen">
+
+      <!--==============================================-->
+      <!--  App Bar                                     -->
+      <!--==============================================-->
+      <div id="appBar" class="themeDark disable-select">
+
+        <img class="appBarIcon" src="Images/yourLogo.png" />
+
+        <div id="appBarTitleAndVersion">
+          <div id="appTitle">Mobile Web App Template</div>
+          <div id="appVersion">──── Version 2024.07.17 ────</div>
+        </div>
+
+
+        <!--======================================================-->
+        <!-- Include IF there is a menu or settings for this app  -->
+        <!--======================================================-->
+        <span style="font-size:4vw; cursor:pointer" onpointerdown="StopEvent(event); ShowMenu()">≡</span>
+
+        <div id="pageMenu" class="dsPageMenu" style="display:none; position:fixed; right:10px; top:80px; font-size:30px">
+          <button class="dsMenuButton"> Menu Item 1 </button><br>
+          <button class="dsMenuButton"> Menu Item 2 </button><br>
+          <button class="dsMenuButton"> Menu Item 3 </button><br>
+          <button class="dsMenuButton"> Menu Item 4 </button><br>
+          <button class="dsMenuButton"> Menu Item 5 </button><br>
+        </div>
+        <!--======================================================-->
+
+
+      </div>
+
+
+      <!--=================================================-->
+      <!--  Content Area                                   -->
+      <!--=================================================-->
+      <div id="contentArea" class="themeMedium dsScrollable disable-select">
+
+        <!--=================================================
+          Create <div>'s for each of your content pages.
+          - The id's should match the html filename.
+          - They must have the class 'contentPage'.
+        ==================================================-->
+        <div id="home"   class="contentPage"></div>
+        <div id="themes" class="contentPage"></div>
+        <div id="popups" class="contentPage"></div>
+
+      </div>
+
+
+      <!--=================================================-->
+      <!--  Bottom Navigation Bar                          -->
+      <!--=================================================-->
+      <div id="navBar" class="themeDark disable-select">
+
+        <!--=================================================
+          Create <button>'s for each of your content pages.
+          - They must have the class 'navButton'.
+          - The onclick attribute must call ShowPage().
+        ==================================================-->
+        <button class="navButton" onpointerdown="StopEvent(event); ShowPage ('home'  , this);">⌂<br>Home</button>
+        <button class="navButton" onpointerdown="StopEvent(event); ShowPage ('themes', this);">T<br>Themes</button>
+        <button class="navButton" onpointerdown="StopEvent(event); ShowPage ('popups', this);">P<br>Popups</button>
+
+      </div>
+
+    </div>
+
+
+    <!-- Load Scripts -->
+    <script src="Scripts/appScript.js"></script>
+
+  </body>
+
+</html>
